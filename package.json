@@ -1,0 +1,18 @@
+{
+  "name": "mongomongoosecrud",
+  "version": "1.0.0",
+  "description": "using mongoose object document mapper with express to manipulate data in mongo database",
+  "main": "express.js",
+  "scripts": {
+    "test": "nodemon express.js"
+  },
+  "author": "Leon Omollo",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.4.4",
+    "path": "^0.12.7"
+  }
+}

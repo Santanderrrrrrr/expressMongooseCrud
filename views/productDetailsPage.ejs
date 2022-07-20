@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> details page</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+  </head>
+  <body>
+    <h1><%= foundProduct.name %></h1>
+    <ul>
+      <li>Category: <a href="/index?category=<%=foundProduct.category%>"> <%= foundProduct.category %></a></li>
+      <li>Price: <%= foundProduct.price %></li>
+    </ul>
+    <a href="/index">All products</a>
+    <a href="/index/<%= foundProduct.id %>/edit">Edit this document</a>
+    <form method="post" action="/index/<%=foundProduct._id%>?_method=DELETE">
+      <button>Delete</button>
+    </form>
+	<!-- <script src="index.js"></script> -->
+  </body>
+</html>
